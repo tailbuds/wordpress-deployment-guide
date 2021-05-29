@@ -893,9 +893,9 @@ download Origin pull certificate from cloudflare
 
     ssl_dhparam /etc/ssl/certs/dhparam.pem;
 
-
-
 ### Adding SSL without cloudflare
+
+//TODO: Add SSL configuration of Lets Encrypt with automatic renewal of certificates
 
 ## Installing wordpress and setting up
 
