@@ -77,11 +77,11 @@ use cubic model for tcp congestion control.
 
 To make the TIME_WAIT state last for 40 seconds, decrease the value of net.ipv4.tcp_fin_timeout to 20 seconds:
 
-    sudo sysctl -w net.ipv4.tcp_fin_timeout = 20
+    sudo sysctl -w net.ipv4.tcp_fin_timeout=20
 
 Improve utilization of tcp sockets
 
-    sudo sysctl -w net.ipv4.tcp_tw_reuse = 1
+    sudo sysctl -w net.ipv4.tcp_tw_reuse=1
 
 ## Raising server Limits
 
@@ -121,7 +121,7 @@ net.ipv4.tcp_max_syn_backlog = 256
 
 Increase the size to a large value, such as 2048:
 
-    sysctl -w net.ipv4.tcp_max_syn_backlog = 2048
+    sudo sysctl -w net.ipv4.tcp_max_syn_backlog=2048
 
 net.ipv4.tcp_max_syn_backlog = 2048
 
